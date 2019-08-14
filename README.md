@@ -30,5 +30,5 @@ onde:
 - N3 = A3 * 0,9 + Lista3 * 0,1
 
 ### Atendimento:
-Sala S105
-e-mail: emanoelim@utfpr.edu.br
+- Sala S105
+- e-mail: emanoelim@utfpr.edu.br
