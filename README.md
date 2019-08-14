@@ -31,3 +31,4 @@ onde:
 
 ### Atendimento:
 Sala S105
+e-mail: emanoelim@utfpr.edu.br
