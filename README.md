@@ -1,4 +1,4 @@
-# Repositório par os materias da disciplina de Estruturas de Dados, Pesquisa e Ordenação.
+# Repositório para os materiais da disciplina de Estruturas de Dados, Pesquisa e Ordenação.
 
 ### Conteúdos previstos:
 - Revisão: estruturas de decisão, estruturas de repetição, funções, vetores, strings.
