@@ -5,6 +5,7 @@
 - Structs;
 - Ponteiros;
 - Alocação dinâmica de memória;
+- Tipos abstratos de dados;
 - Listas, pilhas e filas usando vetores;
 - Listas, pilhas e filas usando ponteiros;
 - Recursividade;
