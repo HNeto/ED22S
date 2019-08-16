@@ -127,6 +127,29 @@ main()  {
 }
 ```
 
+Obs.: em C, não é possível atribuir um array para outro array. Ex.:
+```c
+  char tomate[] = "tomate";
+  tomate = "cebola";
+  printf("%s\n", tomate);
+```
+
+Isto irá gerar um erro:
+
+```diff
+teste.c:6:10: error: assignment to expression with array type
+   tomate = cebola;
+          ^
+```
+
+É preciso copiar item por item. No caso de strings, já existe a função strcpy(), da biblioteca string.h. Ela copia o contdúeo de uma string de origem para uma string de destino. Ela deve ser usada da seguinte forma: strcpy(destino, origem); Portanto, o trecho de código acima pode ser corrigido como é mostrado abaixo:
+
+```c
+  char tomate[] = "tomate";
+  strcpy(tomate, "cebola");
+  printf("%s\n", tomate);
+```
+
 # Inicialização de uma struct
 
 Assim como qualquer outra variável do tipo, int, float, char, etc., é possível inicializar uma struct no momento da declaração. Essa inicialização é parecida com a inicialização de um vetor. Por exemplo:
