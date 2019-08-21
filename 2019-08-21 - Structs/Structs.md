@@ -379,6 +379,8 @@ main() {
 }
 ```  
 
+Cuidado ao acessar os campos de structs aninhadas: a variável "reta" é uma struct do tipo Segmento, e contém os campos "ponto_ini" e "ponto_fin", que não são tipos simples de dados, são structs do tipo Ponto. Portanto, não conseguimos imprimir ou fazer alguma operação aritmética com "reta.ponto_ini" e "reta.ponto_fin". É preciso utilizar o operador ponto até chegar no tipo simples de dados: "reta.ponto_ini.x" ou "reta.ponto_ini.y", por exemplo.
+
 Outro exemplo:
   
 ```c
@@ -395,7 +397,7 @@ struct  data  {
   
 struct  pessoa  {  
   char nome[30];  
-  struct  data  data_nascimento;  
+  Data  data_nascimento;  
 }  
   
 main()  {  
