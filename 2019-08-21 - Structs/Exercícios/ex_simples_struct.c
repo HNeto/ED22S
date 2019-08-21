@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <locale.h>
 
 // struct aluno agora sera chamada de Aluno
 typedef struct aluno Aluno;
@@ -12,6 +13,7 @@ struct aluno {
 };
 
 int main(void) {
+    setlocale(LC_ALL, "Portuguese");
     struct aluno aluno_1;
     Aluno aluno_2;
     char nome[30] = "maria";
